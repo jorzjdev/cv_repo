@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"/Users/jorzj/programma/CV site\" && mkdir -p assets && cp \"/Users/jorzj/Downloads/Резюме_Шипунов_Георгий_Android.pdf\" \"assets/resume-ru.pdf\" && touch .nojekyll && ls -la assets && echo \"---\" && ls -la)"
+    ]
+  }
+}

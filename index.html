@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Георгий Шипунов — Senior Android Developer</title>
+  <meta name="description" content="Senior Android-разработчик · Kotlin, Coroutines, real-time системы. Опыт 6+ лет." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
+</head>
+<body>
+  <!-- Верхняя панель: переключатели языка и темы -->
+  <nav class="topbar" aria-label="Site controls">
+    <div class="topbar__inner">
+      <div class="seg" role="group" aria-label="Language switch">
+        <button type="button" class="seg__btn" data-lang-btn="ru" aria-pressed="true">RU</button>
+        <button type="button" class="seg__btn" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+        <span class="icon-btn__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page" id="top">
+    <!-- ШАПКА -->
+    <header class="hero">
+      <div class="hero__avatar">
+        <img id="avatar-img" src="assets/avatar.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <span class="hero__monogram" aria-hidden="true">ГШ</span>
+      </div>
+      <h1 class="hero__name" data-i18n="name"></h1>
+      <p class="hero__title" data-i18n="role"></p>
+      <p class="hero__location" data-i18n="location"></p>
+
+      <div class="hero__contacts" id="contacts"></div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="assets/resume-ru.pdf" download data-i18n="downloadCv"></a>
+      </div>
+    </header>
+
+    <!-- О СЕБЕ -->
+    <section class="section" aria-labelledby="about-h">
+      <h2 class="section__title" id="about-h" data-i18n="aboutTitle"></h2>
+      <p class="lead" data-i18n="aboutText"></p>
+    </section>
+
+    <!-- КЛЮЧЕВЫЕ ДОСТИЖЕНИЯ / ПРОЕКТЫ -->
+    <section class="section" aria-labelledby="ach-h">
+      <h2 class="section__title" id="ach-h" data-i18n="achievementsTitle"></h2>
+      <div class="metrics" id="metrics"></div>
+      <ul class="bullets" id="achievements"></ul>
+    </section>
+
+    <!-- ОПЫТ РАБОТЫ -->
+    <section class="section" aria-labelledby="exp-h">
+      <h2 class="section__title" id="exp-h" data-i18n="experienceTitle"></h2>
+      <div class="timeline" id="experience"></div>
+    </section>
+
+    <!-- ОБРАЗОВАНИЕ -->
+    <section class="section" aria-labelledby="edu-h">
+      <h2 class="section__title" id="edu-h" data-i18n="educationTitle"></h2>
+      <div class="timeline" id="education"></div>
+    </section>
+
+    <!-- НАВЫКИ -->
+    <section class="section" aria-labelledby="skills-h">
+      <h2 class="section__title" id="skills-h" data-i18n="skillsTitle"></h2>
+      <div class="skills" id="skills"></div>
+    </section>
+
+    <!-- ЯЗЫКИ -->
+    <section class="section" aria-labelledby="lang-h">
+      <h2 class="section__title" id="lang-h" data-i18n="languagesTitle"></h2>
+      <ul class="langs" id="languages"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contacts" id="contacts-footer"></div>
+    <a class="footer__top" href="#top" data-i18n="backToTop"></a>
+    <p class="footer__note" data-i18n="footerNote"></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
